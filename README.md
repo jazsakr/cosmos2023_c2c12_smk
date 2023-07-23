@@ -12,3 +12,5 @@
 	- Reverse flipped reads with custom script
 	- Reference-based error correction using `TranscriptClean`
 	- Quantify and categorize transcripts using `TALON`
+
+![c2c12_diff_ruledag](c2c12_diff_ruledag.png)
