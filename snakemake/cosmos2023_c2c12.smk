@@ -1,7 +1,7 @@
 import pandas as pd
 
 # read sample file and get sample names
-metadata = pd.read_csv('cosmos2023_c2c12_samples.csv', sep=',')
+metadata = pd.read_csv('c2c12_samples.csv', sep=',')
 metadata_df = pd.DataFrame(data = metadata)
 sn_list = metadata_df['sample_file_name'].tolist()
 exp_list = list()
