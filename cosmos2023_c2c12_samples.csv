@@ -1,0 +1,7 @@
+sample_file_name,sample_name,experiment,description,platform
+group1_0hr_rep1_t,0hr_rep1,c2c12_diff,0hr_rep1,ONT_SQK-LSK114
+group2_0hr_rep2_t,0hr_rep2,c2c12_diff,0hr_rep2,ONT_SQK-LSK114
+group3_24hr_rep1_t,24hr_rep1,c2c12_diff,24hr_rep1,ONT_SQK-LSK114
+group4_24hr_rep2_t,24hr_rep2,c2c12_diff,24hr_rep2,ONT_SQK-LSK114
+group5_72hr_rep1_t,72hr_rep1,c2c12_diff,72hr_rep1,ONT_SQK-LSK114
+group6_72hr_rep2_t,72hr_rep2,c2c12_diff,72hr_rep2,ONT_SQK-LSK114

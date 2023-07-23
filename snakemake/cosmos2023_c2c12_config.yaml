@@ -1,0 +1,28 @@
+sample:
+  fastq: ../../PUBLIC/smk_fastqs/{sample}.fastq.gz
+  sam: data/mapped/{sample}.sam
+  bam: data/mapped/{sample}.bam
+  sam_reverse: data/mapped/{sample}r.sam
+  clean: data/processed/{sample}r_clean.sam
+  labeled: data/processed/{sample}r_labeled.sam
+
+reference:
+  mouse:
+    fa: ../../PUBLIC/smk_ref/mm10_M21-encode_lr.fa
+    fa_name: mm10_M21
+    gtf: ../../PUBLIC/smk_ref/mm10_M21-gencode-primary_assembly.gtf
+    gtf_name: gencode_M21
+    bed: ../../PUBLIC/smk_ref/mm10_M21-gencode-primary_assembly.bed
+    sj: ../../PUBLIC/smk_ref/mm10_M21-encode_lr_sj.tsv
+
+packages:
+  transcriptclean: packages/TranscriptClean
+  talon: packages/TALON
+
+talon:
+  talon_config: data/talon/{exp}_talon_config.csv
+  talon_db: data/talon/{exp}_talon.db
+  talon_read_annot: data/talon/{exp}_talon_read_annot.tsv
+  talon_ab: data/talon/{exp}_talon_abundance.tsv
+  talon_ab_f: data/talon/{exp}_talon_abundance_filtered.tsv
+  talon_list: data/talon/{exp}_talon-list.csv
