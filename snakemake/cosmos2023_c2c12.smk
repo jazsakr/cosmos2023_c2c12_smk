@@ -29,7 +29,7 @@ rule minimap:
 		ref_fa = config['reference']['mouse']['fa'],
 		ref_bed = config['reference']['mouse']['bed']
 	output: 
-		sam = config['sample']['sam']
+		sam = temp(config['sample']['sam'])
 	threads: 16
 	resources:
 		mem_gb = 32
@@ -65,8 +65,14 @@ rule sam_reverse:
 	script: 
 		'scripts/reverse_bam_smk.py'
 
-# reference-based error correction by removing microindels, mismatches, and 
-# noncanonical splice junctions in a variant-aware manner using TranscriptClean
+"""
+--------------------------------------------------------------------------------
+                                TranscriptClean
+--------------------------------------------------------------------------------
+reference-based error correction by removing microindels, mismatches, and 
+noncanonical splice junctions in a variant-aware manner using TranscriptClean
+--------------------------------------------------------------------------------
+"""
 
 rule transcriptclean:
 	input:
@@ -97,7 +103,9 @@ rule transcriptclean:
 
 
 """
-TALON
+--------------------------------------------------------------------------------
+                                TALON
+--------------------------------------------------------------------------------
 """
 
 # flag reads for internal priming by recording fraction As in a custom fA:f SAM tag
